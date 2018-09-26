@@ -1,0 +1,109 @@
+//中国背景图片路径域名
+//@imgurl: 'http://c0.mbscss.ussde.molayungroup.com/h5/';
+//美国背景图片路径域名
+//@imgurl: "http://css.mbssr.com/pc/";
+
+@imgurl: '../';
+
+//字体
+@font-face {
+  font-family: fontBook;
+  src: url('@{imgurl}font/neutraface2text-book.woff');
+}
+@font-face {
+  font-family: fontDemi;
+  src: url('@{imgurl}font/neutraface2text-demi.woff');
+}
+
+@font-face {
+  font-family: fontBold;
+  src: url('@{imgurl}font/Neutraface2Display-Bold.woff');
+}
+@font-face {
+  font-family: fontMedium;
+  src: url('@{imgurl}font/Neutraface2Display-Medium.woff');
+}
+
+@font-face {
+  font-family: fontLight;
+  src: url('@{imgurl}font/NeutraTextLight.woff');
+}
+
+@font-face {
+  font-family: fontItalic;
+  src: url('@{imgurl}font/ChronicleDisplay-Italic.woff');
+}
+
+@font-face {
+  font-family: fontRoman;
+  src: url('@{imgurl}font/ChronicleDisplay-Roman.woff');
+}
+
+@F1: fontBook;
+@F2: fontDemi; //导航文字、版头文字
+@F3: fontBold; //标题文字
+@F4: fontMedium; //内容文字，大写时按钮文字
+@F5: fontLight;
+@F6: fontItalic; //特色标题字体
+@F7: fontRoman; //特色标题字体
+@F8: Arial;
+
+//颜色
+@C1: #000; //边框颜色
+@C2: #3f3f3f; //主调色、文字、按钮
+@C3: #ccb0a2; //超级链接文字、按钮、NAV文字、TAB文字选择样式
+@C4: #fbede6; //NAV底色
+@C5: #fcf2ed; //TAB底色
+@C6: #aba8a6; //TAB文字未选择、按钮、边框、提示语
+@C7: #bebebe; //底层颜色、按钮、不可按按钮、分隔线
+@C8: #fff; //按钮文字
+@C9: #0f2f87; //PAYLAL按钮样式
+@C10: #eee; //底部颜色、按钮、其它文字
+@C11: #888; //部分提示语
+@C12: #dcc0b2; //按钮点击颜色
+@C13: #62cfab; //特殊文字
+@C14: #f00; //错误提示文字
+
+// //字号
+// @S1: 66px;
+// @S2: 54px;
+// @S3: 22px;
+// @S4: 20px;
+// @S5: 18px;
+// @S6: 16px;
+// @S7: 15px;
+// @S8: 14px;
+// @S9: 14px;
+// @S10: 13px;
+// @S11: 13px;
+// @S12: 12px;
+// @S13: 30px;
+
+//字号
+@S1: 0.66 * 2rem;
+@S2: 0.54 * 2rem;
+@S3: 0.22 * 2rem;
+@S4: 0.2 * 2rem;
+@S5: 0.18 * 2rem;
+@S6: 0.16 * 2rem;
+@S7: 0.15 * 2rem;
+@S8: 0.14 * 2rem;
+@S9: 0.14 * 2rem;
+@S10: 0.13 * 2rem;
+@S11: 0.13 * 2rem;
+@S12: 0.12 * 2rem;
+@S13: 0.3 * 2rem;
+//支付结果加的
+@ST: 0.28 * 2rem;
+
+//文字间距
+@L1: 0.58px; //标题，价格，内容
+@L2: 0.28px; //文本、标题、按钮
+@L3: 0.1px; //文本、标题、按钮
+
+.font-changes(@font-family:@F4;@font-size:@S9;@color:@C2;@letter-spacing:@L2) {
+  font-size: @font-size;
+  font-family: @font-family;
+  color: @color;
+  letter-spacing: @L2;
+}
